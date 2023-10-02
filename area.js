@@ -36,6 +36,10 @@ function calculateRectangleArea() {
 }
 
 function calculateParallelogramArea() {
+    const base = getInputValue("parallelogram-base");
+    const height = getInputValue("parallelogram-height");
+    const area = base * height;
+    setInnerTextField('parallelogram-area', area)
 
 }
 
@@ -44,4 +48,9 @@ function getInputValue(id) {
     const inputValueField = inputField.value;
     const value = parseFloat(inputValueField);
     return value;
+}
+
+function setInnerTextField(areaId, area) {
+    const element = document.getElementById(areaId);
+    element.innerText = area;
 }
