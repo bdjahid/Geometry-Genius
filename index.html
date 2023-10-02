@@ -40,11 +40,22 @@
                 </div>
                 <div class="card card-compact bg-base-100 shadow-xl">
                     <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Rectangle</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                    <div class="card-body text-center">
+                        <h2>Rectangle</h2>
+                        <p>Area (A) =W*L</p>
+
+                        <p>
+                            <input type="text" class="border text-xl w-24 px-2" placeholder="width"
+                                id="rectangle-width">
+                            <span class=" ml-1">cm</span>
+
+                            <input type="text" class="border text-xl w-24 px-2" placeholder="length"
+                                id="rectangle-length">
+                            <span class=" ml-1">cm</span>
+                        </p>
+                        <p>Area: <span id="rectangle-area">0</span>cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Rectangle</button>
                         </div>
                     </div>
                 </div>
@@ -52,9 +63,20 @@
                     <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Parallelogram</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <p>Area (A) =b*h</p>
+
+                        <p>
+                            <input type="text" class="border text-xl w-24 px-2" placeholder="width"
+                                id="parallelogram-base">
+                            <span class=" ml-1">cm</span>
+
+                            <input type="text" class="border text-xl w-24 px-2" placeholder="length"
+                                id="parallelogram-height">
+                            <span class=" ml-1">cm</span>
+                        </p>
+                        <p>Area: <span id="parallelogram-area">0</span>cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Buy Now</button>
                         </div>
                     </div>
                 </div>
