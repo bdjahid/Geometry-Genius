@@ -42,6 +42,13 @@ function calculateParallelogramArea() {
     setInnerTextField('parallelogram-area', area)
 
 }
+function calculateEllipseArea() {
+    const a = getInputValue("parallelogram-base");
+    const b = getInputValue("parallelogram-height");
+    const area = 3.14 * a * b;
+    setInnerTextField('ellipse-area', area)
+
+}
 
 function getInputValue(id) {
     const inputField = document.getElementById(id);
